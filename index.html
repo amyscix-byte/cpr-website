@@ -1,170 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Health Knowledge Organization</title>
+<meta charset="UTF-8">
+<title>Health Knowledge Organization</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #f4f7f9;
-        }
+<style>
+body { font-family: Arial; margin: 0; background-color: #f4f7f9; }
+header { background: #0d6efd; color: white; padding: 20px; text-align: center; }
+nav { background: #003f88; padding: 10px; text-align: center; }
+nav a { color: white; margin: 10px; text-decoration: none; }
+.container { padding: 20px; }
+.card { background: white; padding: 20px; margin: 10px 0; border-radius: 8px; }
+footer { background: #003f88; color: white; text-align: center; padding: 10px; }
+</style>
 
-        header {
-            background-color: #0d6efd;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        nav {
-            background-color: #003f88;
-            padding: 10px;
-            text-align: center;
-        }
-
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        .container {
-            padding: 20px;
-        }
-
-        .section {
-            margin-bottom: 40px;
-        }
-
-        .card {
-            background: white;
-            padding: 20px;
-            margin: 10px 0;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        footer {
-            background-color: #003f88;
-            color: white;
-            text-align: center;
-            padding: 15px;
-        }
-
-        button {
-            padding: 10px 15px;
-            background-color: #0d6efd;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #0b5ed7;
-        }
-    </style>
 </head>
 
 <body>
 
 <header>
-    <h1>Health Knowledge Organization</h1>
-    <p>Reliable Information for Better Health</p>
+<h1>Health Knowledge Organization</h1>
+<p>Reliable Health Information</p>
 </header>
 
 <nav>
-    <a href="#about">About</a>
-    <a href="#topics">Health Topics</a>
-    <a href="#articles">Articles</a>
-    <a href="#contact">Contact</a>
+<a href="index.html">Home</a>
+<a href="nutrition.html">Nutrition</a>
+<a href="cpr.html">CPR Guide</a>
 </nav>
 
 <div class="container">
 
-    <!-- About Section -->
-    <div class="section" id="about">
-        <h2>About Us</h2>
-        <div class="card">
-            <p>
-                We are dedicated to providing accurate and reliable health information
-                to help individuals make informed decisions about their well-being.
-            </p>
-        </div>
-    </div>
+<h2>Welcome</h2>
+<div class="card">
+<p>We provide reliable healthcare knowledge to help people stay informed.</p>
+</div>
 
-    <!-- Health Topics -->
-    <div class="section" id="topics">
-        <h2>Health Topics</h2>
+<h2>Articles</h2>
 
-        <div class="card">
-            <h3>Nutrition</h3>
-            <p>Learn about healthy eating and balanced diets.</p>
-        </div>
+<div class="card">
+<h3>Nutrition Basics</h3>
+<p>Learn how to eat healthy.</p>
+<a href="nutrition.html">Read More</a>
+</div>
 
-        <div class="card">
-            <h3>Mental Health</h3>
-            <p>Understanding mental well-being and stress management.</p>
-        </div>
-
-        <div class="card">
-            <h3>Chronic Diseases</h3>
-            <p>Information on managing long-term conditions.</p>
-        </div>
-
-    </div>
-
-    <!-- Articles -->
-    <div class="section" id="articles">
-        <h2>Latest Articles</h2>
-
-        <div class="card">
-            <h3>How to Maintain a Healthy Lifestyle</h3>
-            <p>Practical tips for everyday health improvement.</p>
-            <button onclick="showMessage()">Read More</button>
-        </div>
-
-    </div>
-
-    <!-- Contact -->
-    <div class="section" id="contact">
-        <h2>Contact Us</h2>
-        <div class="card">
-            <form>
-                <label>Name:</label><br>
-                <input type="text" required><br><br>
-
-                <label>Email:</label><br>
-                <input type="email" required><br><br>
-
-                <label>Message:</label><br>
-                <textarea rows="4" required></textarea><br><br>
-
-                <button type="submit">Send</button>
-            </form>
-        </div>
-    </div>
+<div class="card">
+<h3>CPR Guide</h3>
+<p>Learn lifesaving emergency techniques.</p>
+<a href="cpr.html">Read More</a>
+</div>
 
 </div>
 
 <footer>
-    <p>© 2026 Health Knowledge Organization</p>
-    <p><small>This website is for educational purposes only and not medical advice.</small></p>
+<p>© 2026 Health Knowledge</p>
+<p><small>Not medical advice</small></p>
 </footer>
-
-<script>
-    function showMessage() {
-        alert("More detailed article content coming soon!");
-    }
-</script>
 
 </body>
 </html>
